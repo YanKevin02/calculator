@@ -92,7 +92,7 @@
 
    <script>
       function addToDisplay(value) {
-         if (document.getElementById('display').value === 'Erro') {
+         if (document.getElementById('display').value === 'Erro' || document.getElementById('display').value === '0' || document.getElementById('display').value === 'Infinity') {
             document.getElementById('display').value = ''}
          document.getElementById('display').value += value;
       }
